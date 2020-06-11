@@ -1,0 +1,128 @@
+header{ /* HEADER*/
+  background-image: url(header.png);
+  display: flex;
+  justify-content: space-between;
+}
+.gauche{ /* HEADER*/
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  font-family: Montserrat-Bold;
+}
+ul{ /* HEADER*/
+  margin-right: 30px;
+}
+header ul, .langage ul{ /*HEADER*/
+  list-style: none;
+  line-height: 200%;
+  font-family: Montserrat-Light;
+}
+.logo{ /* HEADER*/
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+}
+.slash{ /* HEADER */
+  height: 25px;
+  width: 0px;
+  transform: skew(-45deg) translate(5px, 8px);
+  border: solid 1px white;
+  display: inline-block;
+}
+h1{ /* HEADER*/
+  margin-left: 10px;
+}
+.langage b{
+  font-family: Montserrat-Bold;
+}
+
+
+section, hr{ /* SECTION INTRO */
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.intro{ /* SECTION INTRO */
+  display: flex;
+  justify-content: space-between;
+}
+.intro b{
+  display: flex;
+  align-items: flex-start;
+}
+p{ /* SECTION INTRO */
+  line-height: 150%;
+  text-align: justify;
+  font-family: Montserrat-Light;
+}
+p b, h2, h3, h5, .skills b, .training b{
+  font-family: Montserrat-Bold;
+  font-variant: small-caps;
+}
+.career ul, .skills ul{
+  font-family: Montserrat-Light;
+  line-height: 150%;
+  text-align: justify;
+}
+.photo_html, .photo_css{ /*SECTION INTRO*/
+  width: 10%;
+}
+
+
+.career, .skills, .hobbies{ /* SECTION FLEX */
+  display: flex;
+  justify-content: space-around;
+}
+.training, .expertise, .softskill, .quality, .langue, .interest, .job{ /* SECTION FLEX */
+  width: 50%;
+  line-height: 150%;
+  text-align: justify;
+}
+.image{
+  display: flex;
+  justify-content: space-around;
+}
+.interest, .langue{
+  text-align: center;
+}
+.langue ul{
+  display: flex;
+  justify-content: space-around;
+}
+.softskill, .quality{
+  
+}
+
+@font-face{
+  font-family: 'Montserrat-Light';
+  src: url('Montserrat-Light.eot'),
+       url('Montserrat-Light.otf'),
+       url('Montserrat-Light.svg'),
+       url('Montserrat-Light.ttf'),
+       url('Montserrat-Light.woff'),
+       url('Montserrat-Light.woff2'); 
+}
+@font-face{
+  font-family: 'Montserrat-Bold';
+  src: url('Montserrat-Bold.eot'),
+       url('Montserrat-Bold.otf'),
+       url('Montserrat-Bold.svg'),
+       url('Montserrat-Bold.ttf'),
+       url('Montserrat-Bold.woff'),
+       url('Montserrat-Bold.woff2'); 
+}
+body{
+  background-color: rgb(239, 239, 239)
+}
+
+.avion{
+  cursor: pointer;
+  transform: scale(1);
+  &:hover{
+    transform: scale(1.15);
+  }
+}
